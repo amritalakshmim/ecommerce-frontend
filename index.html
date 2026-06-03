@@ -5,10 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Commerce Frontend</title>
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to Our Online Store</h1>
+        <div class="logo">
+            <h1>NovaMart</h1>
+        </div>
+
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="search-bar">
+            <span class="search-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </span>
+            <input type="text" placeholder="Search for products...">
+        </div>
+
+        <div class="cart">
+            🛒
+            <span>0</span>
+        </div>
+
+        <div class="hamburger-menu">
+            ☰
+        </div>
     </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Discover the Best Deals at NovaMart</h1>
+
+            <p>
+                Shop the latest products with exclusive discounts and fast delivery.
+            </p>
+
+            <a href="#" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+    <script src="scripts/app.js"></script>
+    
 </body>    
 </html>

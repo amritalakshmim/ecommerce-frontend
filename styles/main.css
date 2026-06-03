@@ -4,3 +4,185 @@ body {
     padding: 0;
     text-align: center;
 }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 24px;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.search-bar {
+    position: relative;
+}
+
+.search-icon {
+    color: #666;
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.search-bar input {
+    padding: 8px 12px 8px 35px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+}
+
+.cart {
+    position: relative; 
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.cart span {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+}
+
+.hamburger-menu {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;    
+}
+
+@media (max-width: 768px) {
+    
+    nav {
+        display: none;
+    }
+
+    .nav-menu.active {
+        display: block;
+    }
+
+    .nav-menu {
+        transition: all 0.3s ease;
+    }
+        
+
+    .search-bar {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    header {
+        padding: 15px;
+    }   
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    min-height: 80vh;
+
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+
+    padding: 40px 20px;
+}
+
+.hero-content {
+    max-width: 700px;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 12px 24px;
+
+    background-color: white;
+    color: #2563eb;
+
+    text-decoration: none;
+    border-radius: 8px;
+
+    font-weight: bold;
+
+    transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    
+    .hero {
+        min-height: 60vh;
+        padding: 30px 15px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }   
+
+    .cta-btn {
+        padding: 14px 28px;
+        font-size: 1rem;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
